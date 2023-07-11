@@ -1,4 +1,4 @@
-From 047fc84b84a56d5ebebcf8e455df80e1e5f4a993 Mon Sep 17 00:00:00 2001
+From a1fbe4485c552f711ff779c0991aad8d07759ece Mon Sep 17 00:00:00 2001
 From: JustSoup321 <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 16:02:09 -0400
 Subject: [PATCH 2/2] Modify frontend flashing abilities in config init.py to

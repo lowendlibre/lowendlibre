@@ -1,4 +1,4 @@
-From 89163b8260f369fabb58ef1a6d555bdc6cf9029a Mon Sep 17 00:00:00 2001
+From 1a04eb3d186990749846a0aa0f839a174e5020e2 Mon Sep 17 00:00:00 2001
 From: Brandon Boese <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 15:29:18 -0400
 Subject: [PATCH 1/2] Modify flasher init.py for mtkclient.
