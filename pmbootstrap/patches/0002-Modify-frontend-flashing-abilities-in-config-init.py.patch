@@ -18,7 +18,7 @@ index 85e2f753..f16894e4 100644
          },
 +    },
 +    "mtkclient": {
-+        "depends": ["mtkclient"],
++        "depends": ["mtkclient"]
 +        "actions": {
 +            "flash_rootfs": [["mtk", "w", "$PARTITION_ROOTFS",
 +                              "$IMAGE"]],
