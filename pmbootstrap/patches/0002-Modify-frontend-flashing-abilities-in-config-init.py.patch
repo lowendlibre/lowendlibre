@@ -1,0 +1,45 @@
+From c7dac75fa2165e68dcae25ec087619d5dd1e8b23 Mon Sep 17 00:00:00 2001
+From: JustSoup321 <brandonboese@protonmail.com>
+Date: Tue, 11 Jul 2023 16:02:09 -0400
+Subject: [PATCH 2/2] Modify frontend flashing abilities in config init.py to
+ support mtkclient.
+
+---
+ pmb/config/__init__.py | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+diff --git a/pmb/config/__init__.py b/pmb/config/__init__.py
+index 921f6c48..f4bf3817 100644
+--- a/pmb/config/__init__.py
++++ b/pmb/config/__init__.py
+@@ -1033,6 +1033,27 @@ flashers = {
+             ],
+         },
+     }
++    "mtkclient": {
++        "depends": ["mtkclient"]
++        "actions": {
++            "flash_rootfs": [["mtk", "w", "$PARTITION_ROOTFS",
++                              "$IMAGE"]],
++            "flash_kernel": [["mtk", "w", "$PARTITION_KERNEL",
++                              "$BOOT/boot.img$FLAVOR"]],
++            "flash_vbmeta": [
++                # Generate vbmeta image with "disable verification" flag
++                ["avbtool", "make_vbmeta_image", "--flags", "2",
++                    "--padding_size", "$FLASH_PAGESIZE",
++                    "--output", "/vbmeta.img"],
++                ["mtk", "w", "$PARTITION_VBMETA", "/vbmeta.img"],
++                ["rm", "-f", "/vbmeta.img"]
++            ],
++            "flash_dtbo": [["mtk", "w", "$PARTITION_DTBO",
++                            "$BOOT/dtbo.img"]],
++            "flash_lk2nd": [["mtk", "w", "$PARTITION_KERNEL",
++                             "$BOOT/lk2nd.img"]]
++        }
++    }
+ }
+ 
+ #
+-- 
+2.41.0
+
