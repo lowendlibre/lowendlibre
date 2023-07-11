@@ -1,4 +1,4 @@
-From c7dac75fa2165e68dcae25ec087619d5dd1e8b23 Mon Sep 17 00:00:00 2001
+From 047fc84b84a56d5ebebcf8e455df80e1e5f4a993 Mon Sep 17 00:00:00 2001
 From: JustSoup321 <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 16:02:09 -0400
 Subject: [PATCH 2/2] Modify frontend flashing abilities in config init.py to
@@ -9,10 +9,10 @@ Subject: [PATCH 2/2] Modify frontend flashing abilities in config init.py to
  1 file changed, 21 insertions(+)
 
 diff --git a/pmb/config/__init__.py b/pmb/config/__init__.py
-index 921f6c48..f4bf3817 100644
+index 85e2f753..906f17af 100644
 --- a/pmb/config/__init__.py
 +++ b/pmb/config/__init__.py
-@@ -1033,6 +1033,27 @@ flashers = {
+@@ -1032,6 +1032,27 @@ flashers = {
              ],
          },
      }
@@ -41,5 +41,5 @@ index 921f6c48..f4bf3817 100644
  
  #
 -- 
-2.41.0
+2.39.2
 
