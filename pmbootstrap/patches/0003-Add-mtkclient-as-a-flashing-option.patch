@@ -1,0 +1,24 @@
+From cf8178d4114454bcc3a3be45bd828f08601019c5 Mon Sep 17 00:00:00 2001
+From: JustSoup321 <brandonboese@protonmail.com>
+Date: Tue, 11 Jul 2023 17:15:50 -0400
+Subject: [PATCH 3/3] Add mtkclient as a flashing option.
+
+---
+ pmb/config/__init__.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/pmb/config/__init__.py b/pmb/config/__init__.py
+index f16894e4..6484fdb3 100644
+--- a/pmb/config/__init__.py
++++ b/pmb/config/__init__.py
+@@ -884,6 +884,7 @@ flash_methods = [
+     "none",
+     "rkdeveloptool",
+     "uuu",
++    "mtkclient",
+ ]
+ 
+ # These folders will be mounted at the same location into the native
+-- 
+2.41.0
+
