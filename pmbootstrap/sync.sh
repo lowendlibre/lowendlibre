@@ -7,3 +7,5 @@ git reset --hard origin/master
 git pull
 git am ../patches/*.patch --no-gpg-sign
 cd ..
+
+./update.sh
