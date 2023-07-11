@@ -1,4 +1,4 @@
-From 1a04eb3d186990749846a0aa0f839a174e5020e2 Mon Sep 17 00:00:00 2001
+From 461e6fe1ce621038a2ae02567a5b9aa7e6e13214 Mon Sep 17 00:00:00 2001
 From: Brandon Boese <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 15:29:18 -0400
 Subject: [PATCH 1/2] Modify flasher init.py for mtkclient.
@@ -23,5 +23,5 @@ index aff7808d..1e2c716b 100644
      pmb.chroot.apk.install(args, depends)
  
 -- 
-2.39.2
+2.41.0
 
