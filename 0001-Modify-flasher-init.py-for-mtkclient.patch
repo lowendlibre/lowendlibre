@@ -1,0 +1,27 @@
+From d57d81e95e96333eb4eb7b8ad3595fa1a180df1f Mon Sep 17 00:00:00 2001
+From: Brandon Boese <brandonboese@protonmail.com>
+Date: Tue, 11 Jul 2023 15:29:18 -0400
+Subject: [PATCH] Modify flasher init.py for mtkclient.
+
+---
+ pmb/flasher/init.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/pmb/flasher/init.py b/pmb/flasher/init.py
+index aff7808d..1e2c716b 100644
+--- a/pmb/flasher/init.py
++++ b/pmb/flasher/init.py
+@@ -32,6 +32,10 @@ def install_depends(args):
+         pmaports_cfg = pmb.config.pmaports.read_config(args)
+         depends = pmaports_cfg.get("supported_heimdall_depends",
+                                    "heimdall,avbtool").split(",")
++    elif method == "mtkclient":
++        pmaports_cfg = pmb.config.pmaports.read_config(args)
++        depends = pmaports_cfg.get("supported_mtkclient_depends",
++                                   "mtkclient,avbtool").split(",")
+ 
+     pmb.chroot.apk.install(args, depends)
+ 
+-- 
+2.41.0
+
