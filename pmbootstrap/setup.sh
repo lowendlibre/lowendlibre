@@ -8,5 +8,5 @@ then
 fi
 
 cd pmbootstrap
-git am ../patches/*.patch
+git am ../patches/*.patch --no-gpg-sign
 cd ..
