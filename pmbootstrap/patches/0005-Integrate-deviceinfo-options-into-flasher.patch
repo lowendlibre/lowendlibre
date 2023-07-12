@@ -1,0 +1,32 @@
+From ddd5cabaf387ec693c46df0736ad7a6c201caf43 Mon Sep 17 00:00:00 2001
+From: JustSoup321 <brandonboese@protonmail.com>
+Date: Tue, 11 Jul 2023 23:33:54 -0400
+Subject: [PATCH 5/5] Integrate deviceinfo options into flasher.
+
+---
+ pmb/flasher/variables.py | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/pmb/flasher/variables.py b/pmb/flasher/variables.py
+index e00ed1d7..1625721b 100644
+--- a/pmb/flasher/variables.py
++++ b/pmb/flasher/variables.py
+@@ -31,6 +31,15 @@ def variables(args, flavor, method):
+             or args.deviceinfo["flash_rk_partition_system"] or None
+         _partition_vbmeta = None
+         _partition_dtbo = None
++    elif method.startswith("mtkclient"):
++        _partition_kernel = args.deviceinfo["flash_mtkclient_partition_kernel"]\
++            or "boot"
++        _partition_rootfs = args.deviceinfo["flash_mtkclient_partition_rootfs"]\
++            or args.deviceinfo["flash_mtkclient_partition_system"] or "userdata"
++        _partition_vbmeta = args.deviceinfo["flash_mtkclient_partition_vbmeta"]\
++            or None
++        _partition_dtbo = args.deviceinfo["flash_mtkclient_partition_dtbo"]\
++            or None
+     else:
+         _partition_kernel = args.deviceinfo["flash_heimdall_partition_kernel"]\
+             or "KERNEL"
+-- 
+2.41.0
+
