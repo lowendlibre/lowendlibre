@@ -1,0 +1,28 @@
+From fe2f8da99bc39d1950855f1e5c4eecf161703b67 Mon Sep 17 00:00:00 2001
+From: JustSoup321 <brandonboese@protonmail.com>
+Date: Tue, 11 Jul 2023 23:21:44 -0400
+Subject: [PATCH 4/4] Add deviceinfo options for mtkclient.
+
+---
+ pmb/config/__init__.py | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/pmb/config/__init__.py b/pmb/config/__init__.py
+index 6484fdb3..485ad52b 100644
+--- a/pmb/config/__init__.py
++++ b/pmb/config/__init__.py
+@@ -802,6 +802,11 @@ deviceinfo_attributes = [
+     "flash_rk_partition_kernel",
+     "flash_rk_partition_rootfs",
+     "flash_rk_partition_system", # deprecated
++    "flash_mtkclient_partition_kernel",
++    "flash_mtkclient_partition_rootfs",
++    "flash_mtkclient_partition_system", # deprecated
++    "flash_mtkclient_partition_vbmeta",
++    "flash_mtkclient_partition_dtbo",
+     "generate_legacy_uboot_initfs",
+     "kernel_cmdline",
+     "generate_bootimg",
+-- 
+2.41.0
+
