@@ -1,7 +1,7 @@
-From cf8178d4114454bcc3a3be45bd828f08601019c5 Mon Sep 17 00:00:00 2001
+From 5340559ad33faf6ff13ea83eb6da3090ff1d5df9 Mon Sep 17 00:00:00 2001
 From: JustSoup321 <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 17:15:50 -0400
-Subject: [PATCH 3/3] Add mtkclient as a flashing option.
+Subject: [PATCH 3/5] Add mtkclient as a flashing option.
 
 ---
  pmb/config/__init__.py | 1 +
@@ -20,5 +20,5 @@ index f16894e4..6484fdb3 100644
  
  # These folders will be mounted at the same location into the native
 -- 
-2.41.0
+2.39.2
 

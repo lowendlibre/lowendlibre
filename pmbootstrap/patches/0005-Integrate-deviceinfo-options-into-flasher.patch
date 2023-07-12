@@ -1,4 +1,4 @@
-From ddd5cabaf387ec693c46df0736ad7a6c201caf43 Mon Sep 17 00:00:00 2001
+From 0d0f6b3159a25c7245d7116e5f52a4f46263f011 Mon Sep 17 00:00:00 2001
 From: JustSoup321 <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 23:33:54 -0400
 Subject: [PATCH 5/5] Integrate deviceinfo options into flasher.
@@ -28,5 +28,5 @@ index e00ed1d7..1625721b 100644
          _partition_kernel = args.deviceinfo["flash_heimdall_partition_kernel"]\
              or "KERNEL"
 -- 
-2.41.0
+2.39.2
 

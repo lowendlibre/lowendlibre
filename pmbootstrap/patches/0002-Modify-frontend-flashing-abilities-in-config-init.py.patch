@@ -1,7 +1,7 @@
-From de555f44d69b0a41c9d58ed17b3710ee9897d59c Mon Sep 17 00:00:00 2001
+From cf32ee90951255b18b737fcc8ecbb0af7b7ae55c Mon Sep 17 00:00:00 2001
 From: JustSoup321 <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 16:54:23 -0400
-Subject: [PATCH 2/2] Modify frontend flashing abilities in config init.py to 
+Subject: [PATCH 2/5] Modify frontend flashing abilities in config init.py to
  support mtkclient.
 
 ---
@@ -41,5 +41,5 @@ index 85e2f753..f16894e4 100644
  }
  
 -- 
-2.41.0
+2.39.2
 

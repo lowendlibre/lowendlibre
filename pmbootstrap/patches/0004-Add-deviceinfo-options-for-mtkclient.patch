@@ -1,7 +1,7 @@
-From fe2f8da99bc39d1950855f1e5c4eecf161703b67 Mon Sep 17 00:00:00 2001
+From 454385541d2a3d9e14e99fe135825192592441a7 Mon Sep 17 00:00:00 2001
 From: JustSoup321 <brandonboese@protonmail.com>
 Date: Tue, 11 Jul 2023 23:21:44 -0400
-Subject: [PATCH 4/4] Add deviceinfo options for mtkclient.
+Subject: [PATCH 4/5] Add deviceinfo options for mtkclient.
 
 ---
  pmb/config/__init__.py | 5 +++++
@@ -24,5 +24,5 @@ index 6484fdb3..485ad52b 100644
      "kernel_cmdline",
      "generate_bootimg",
 -- 
-2.41.0
+2.39.2
 
