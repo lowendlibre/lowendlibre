@@ -7,7 +7,7 @@ SCRIPT_CWD=`dirname $0`
 
 if [ ! -d $SCRIPT_CWD/pmbootstrap ]
 then
-	git clone https://gitlab.com/postmarketos/pmbootstrap.git $SCRIPT_CWD/pmbootstrap
+	git clone https://git.sr.ht/~postmarketos/pmbootstrap $SCRIPT_CWD/pmbootstrap
 fi
 
 cd $SCRIPT_CWD/pmbootstrap
