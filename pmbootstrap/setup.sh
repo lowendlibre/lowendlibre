@@ -10,6 +10,9 @@ then
 	git clone https://git.sr.ht/~postmarketos/pmbootstrap $SCRIPT_CWD/pmbootstrap
 fi
 
-cd $SCRIPT_CWD/pmbootstrap
-git am ../patches/*.patch --no-gpg-sign
-cd ..
+if [ -d $SCRIPT_CWD/patches ]
+then
+	cd $SCRIPT_CWD/pmbootstrap
+	git am ../patches/*.patch --no-gpg-sign
+	cd $ORIGINAL_CWD
+fi

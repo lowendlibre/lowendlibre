@@ -11,6 +11,9 @@ then
 	exit 1
 fi
 
-cd $SCRIPT_CWD/pmbootstrap
-git format-patch origin/master..HEAD -o ../patches
-cd ..
+if [ -d $SCRIPT_CWD/patches ]
+then
+	cd $SCRIPT_CWD/pmbootstrap
+	git format-patch origin/master..HEAD -o ../patches
+	cd $ORIGINAL_CWD
+fi

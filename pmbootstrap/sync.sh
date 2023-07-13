@@ -16,7 +16,12 @@ fi
 cd $SCRIPT_CWD/pmbootstrap
 git reset --hard origin/master
 git pull
-git am ../patches/*.patch --no-gpg-sign
+
+if [ -d $SCRIPT_CWD/patches ]
+then
+	git am ../patches/*.patch --no-gpg-sign
+fi
+
 cd ..
 
 $SCRIPT_CWD/update.sh
