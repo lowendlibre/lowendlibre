@@ -1,6 +1,6 @@
 # lowendlibre
 
-The freedom of postmarketOS (and other distros!), now on low-end MediaTek devices.
+The freedom of postmarketOS (and other distros!), now on low-end MediaTek-based devices.
 
 ## Why?
 
